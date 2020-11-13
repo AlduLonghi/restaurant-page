@@ -39,7 +39,7 @@ function header() {
     headerCont.appendChild(headerT);
     headerCont.appendChild(headerImg);
     container.appendChild(headerCont);
-    container.classList.add('container-lg');
+    container.classList.add('container-lg', 'px-0');
 }
 
 export default header();

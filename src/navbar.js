@@ -1,51 +1,40 @@
-
-function navbarContainer() {
-    let navbar = document.createElement('nav');
-    navbar.classList.add('navbar', 'navbar-expand-lg', 'navbar-light', 'bg-light');
-    return navbar;
-    
-  }
+const navbarContainer = document.createElement('nav');
+navbarContainer.classList.add('navbar', 'navbar-expand-lg', 'navbar-light', 'bg-light');
   
-  function navbarInnerDiv() {
-    let innerDiv = document.createElement('div');
-    innerDiv.classList.add('navbar-nav', 'justify-content-around', 'w-100');
-    return innerDiv;
-  }
+const navbarInnerDiv = document.createElement('div');
+navbarInnerDiv.classList.add('navbar-nav', 'justify-content-around', 'w-100');
+
+const mainContainer = document.getElementById('container');
   
   function navbarLinks() {
-      let container = navbarInnerDiv();
       let icons = ['fa', 'fa', 'fab', 'fas'];
       let iconsClass = ['fa-home', 'fa-cutlery', 'fa-elementor', 'fa-phone'];
       let text =['Home', 'About', 'Menu', 'Contact'];
   
       for (let j = 0; j < icons.length; j += 1) {
-          let spanElem = document.createElement('span');
-          spanElem.classList.add('d-flex');
+          let linkElem = document.createElement('a');
+          linkElem.href = '#';
+          linkElem.classList.add('d-flex', 'links');
   
           let iconElem = document.createElement('i');
           iconElem.classList.add(icons[j], iconsClass[j], 'nav-link');
   
-          let textElem = document.createElement('a');
+          let textElem = document.createElement('p');
           textElem.textContent += text[j];
-          textElem.href = '#';
-          textElem.classList.add('nav-link');
+          textElem.classList.add('nav-link', 'mb-0');
   
-          spanElem.appendChild(iconElem);
-          spanElem.appendChild(textElem);
-          container.appendChild(spanElem);
-          console.log(container);
+          linkElem.append(iconElem, textElem);
+          navbarInnerDiv.appendChild(linkElem);
       }
   
-      return container;
+      return navbarInnerDiv;
   }
   
 function navbar() {
-    let mainContainer = document.getElementById('container');
-    let navbar = navbarContainer();
-    let links = navbarLinks();
+    const links = navbarLinks();
 
-    navbar.appendChild(links);
-    mainContainer.appendChild(navbar);
+    navbarContainer.appendChild(links);
+    mainContainer.append(navbarContainer);
 }
 
 export default navbar();

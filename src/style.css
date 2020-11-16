@@ -46,3 +46,7 @@ img:hover {
 .navbar-nav a {
   color: black;
 }
+
+.tabbed-container {
+  height: 40vh;
+}

@@ -15,7 +15,7 @@ brandText.textContent += "Cheese masters";
 brandText.classList.add('brand', 'text-center');
 
 let sloganText = document.createElement('p');
-sloganText.textContent += "The greesiest, the better!";
+sloganText.textContent += "The greasiest, the better!";
 sloganText.classList.add('slogan', 'text-center');
 
 textContainer.appendChild(brandText);

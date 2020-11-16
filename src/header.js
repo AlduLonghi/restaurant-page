@@ -11,15 +11,15 @@ headerImage.src = Burger;
 headerImage.classList.add('h-75');
 
 function headerText() {
-  let textContainer = document.createElement('span');
+  const textContainer = document.createElement('span');
   textContainer.classList.add('w-50', 'h-100', 'brand-container', 'd-flex', 'flex-column', 'justify-content-around');
 
-  let brandText = document.createElement('p');
-  brandText.textContent += "Cheese masters";
+  const brandText = document.createElement('p');
+  brandText.textContent += 'Cheese masters';
   brandText.classList.add('brand', 'text-center');
 
-  let sloganText = document.createElement('p');
-  sloganText.textContent += "The greasiest, the better!";
+  const sloganText = document.createElement('p');
+  sloganText.textContent += 'The greasiest, the better!';
   sloganText.classList.add('slogan', 'text-center');
 
   textContainer.appendChild(brandText);
@@ -28,7 +28,7 @@ function headerText() {
 }
 
 function header() {
-  let headerT = headerText();
+  const headerT = headerText();
 
   headerContainer.append(headerT, headerImage);
   container.appendChild(headerContainer);

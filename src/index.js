@@ -7,4 +7,3 @@ import indexLoad from './index-load';
 header();
 navbar();
 indexLoad();
-

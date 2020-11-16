@@ -16,8 +16,9 @@
 
 .slogan {
   color: white;
-  font-size: 2vw;
-  font-family: 'Margarine', cursive;
+  font-size: 1.7vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .brand-container {
@@ -48,5 +49,22 @@ img:hover {
 }
 
 .div-container {
-  height: 40vh;
+  height: 47vh;
+  background-color: black;
+  color: #f7cb46;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.home-description {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-title {
+  font-size: 3.2vw;
+}
+
+.burger-gif {
+  height: 8vw;
+  width: 8vw;
 }

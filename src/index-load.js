@@ -9,7 +9,7 @@ const divContainer = document.createElement('div');
 divContainer.setAttribute('id', 'tabbed-container');
 divContainer.classList.add('div-container');
 
-function onclickEvent(id) {
+const onclickEvent = (id) => {
   const tabbedContainers = document.querySelectorAll('.tabbed-container');
   tabbedContainers.forEach(cont => {
     cont.style.display = 'none';
@@ -18,7 +18,7 @@ function onclickEvent(id) {
   displayContainer.style.display = 'block';
 }
 
-function onclickEventSetter() {
+const onclickEventSetter = () => {
   const links = document.querySelectorAll('.links');
   links.forEach(link => {
     link.addEventListener('click', () => {

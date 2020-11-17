@@ -83,6 +83,17 @@ img:hover {
 .menu-card {
   width: 15rem;
   height: 22rem;
-  color:black;
+  color: black;
   font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-title {
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.contact-description {
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  font-size: 1.4rem;
 }

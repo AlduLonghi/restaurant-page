@@ -27,6 +27,11 @@ const reservEmail = document.createElement('p');
 reservEmail.textContent += 'cheesemasters@gmail.com';
 reservEmail.classList.add('contact-description');
 
-contactContainer.append(phoneTitle, phoneNumber, adress, adressDescription, reservations, reservEmail);
+contactContainer.append(phoneTitle,
+  phoneNumber,
+  adress,
+  adressDescription,
+  reservations,
+  reservEmail);
 
 export default contactContainer;

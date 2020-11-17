@@ -4,7 +4,7 @@ const footerDiv = document.createElement('div');
 footerDiv.classList.add('footer-div');
 
 const footer = () => {
-    mainContainer.appendChild(footerDiv);
-}
+  mainContainer.appendChild(footerDiv);
+};
 
 export default footer();

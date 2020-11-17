@@ -25,13 +25,13 @@ const headerText = () => {
   textContainer.appendChild(brandText);
   textContainer.appendChild(sloganText);
   return textContainer;
-}
+};
 
 const header = () => {
   const headerT = headerText();
 
   headerContainer.append(headerT, headerImage);
   container.appendChild(headerContainer);
-}
+};
 
 export default header();

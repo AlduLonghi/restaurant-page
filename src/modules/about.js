@@ -13,24 +13,24 @@ aboutText.textContent += `Lorem ipsum dolor sit amet, consectetur adipiscing eli
  Duis sagittis fermentum nunc, eget pretium nisi dictum quis. Donec mauris dolor, 
  bibendum at venenatis dignissim, cursus ut tortor. Etiam at neque quis justo tempor imperdiet vitae id urna. 
  Curabitur hendrerit bibendum nisi eu lobortis. Donec auctor, risus vitae eleifend convallis, tortor orci molestie dui, 
- vitae mollis odio purus id orci. Curabitur ornare ac massa et tincidunt. Aenean cursus nibh et blandit posuere.`
+ vitae mollis odio purus id orci. Curabitur ornare ac massa et tincidunt. Aenean cursus nibh et blandit posuere.`;
 
 const imageContainer = document.createElement('div');
 imageContainer.classList.add('image-container', 'd-flex', 'justify-content-between');
 
 const aboutImages = () => {
-    const imageSrc = [restPic1, restPic2, restPic3];
+  const imageSrc = [restPic1, restPic2, restPic3];
 
-    for (let i = 0; i < imageSrc.length; i += 1) {
-        const image = document.createElement('img');
-        image.classList.add('rest-img');
-        image.src = imageSrc[i];
+  for (let i = 0; i < imageSrc.length; i += 1) {
+    const image = document.createElement('img');
+    image.classList.add('rest-img');
+    image.src = imageSrc[i];
 
-        imageContainer.appendChild(image);
-    }
+    imageContainer.appendChild(image);
+  }
 
-    return imageContainer
-}
+  return imageContainer;
+};
 
 aboutContainer.appendChild(aboutText);
 aboutContainer.appendChild(aboutImages());

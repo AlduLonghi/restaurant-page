@@ -13,7 +13,7 @@ const onclickEvent = (id) => {
   });
   const displayContainer = document.getElementById(`${id}-container`);
   displayContainer.style.display = 'block';
-}
+};
 
 const navbarLinks = () => {
   const icons = ['fa', 'fa', 'fab', 'fas'];
@@ -26,7 +26,8 @@ const navbarLinks = () => {
     linkElem.classList.add('d-flex', 'links');
     linkElem.setAttribute('id', `${text[j]}-btn`.toLowerCase());
     linkElem.addEventListener('click', () => {
-      onclickEvent(`${text[j]}-btn`.toLowerCase())});
+      onclickEvent(`${text[j]}-btn`.toLowerCase());
+    });
 
     const iconElem = document.createElement('i');
     iconElem.classList.add(icons[j], iconsClass[j], 'nav-link');
@@ -37,13 +38,13 @@ const navbarLinks = () => {
 
     linkElem.append(iconElem, textElem);
     navbarInnerDiv.appendChild(linkElem);
-  };
+  }
   return navbarInnerDiv;
-}
+};
 
 const navbar = () => {
   navbarContainer.appendChild(navbarLinks());
   mainContainer.append(navbarContainer);
-}
+};
 
 export default navbar();

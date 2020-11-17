@@ -12,6 +12,6 @@ divContainer.classList.add('div-container');
 const tabbedContainer = () => {
   divContainer.append(homeContainer, aboutContainer, menuContainer, contactContainer);
   mainContainer.appendChild(divContainer);
-}
+};
 
 export default tabbedContainer();

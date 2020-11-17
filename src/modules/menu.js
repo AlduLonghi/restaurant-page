@@ -11,33 +11,33 @@ const cardContainer = document.createElement('div');
 cardContainer.classList.add('w-100', 'h-100', 'd-flex', 'justify-content-between', 'py-4');
 
 const menuCards = () => {
-    const menuPics = [burger1, burger2, burger3]; 
+  const menuPics = [burger1, burger2, burger3];
 
-    for (let i = 0; i < menuPics.length; i += 1) {
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('card', 'menu-card');
+  for (let i = 0; i < menuPics.length; i += 1) {
+    const cardDiv = document.createElement('div');
+    cardDiv.classList.add('card', 'menu-card');
 
-        const cardImg = document.createElement('img');
-        cardImg.src = menuPics[i];
-        cardImg.classList.add('card-img-top');
+    const cardImg = document.createElement('img');
+    cardImg.src = menuPics[i];
+    cardImg.classList.add('card-img-top');
 
-        const cardBody = document.createElement('div');
-        cardBody.classList.add('card-body');
+    const cardBody = document.createElement('div');
+    cardBody.classList.add('card-body');
 
-        const cardTitle = document.createElement('h5');
-        cardTitle.classList.add('card-title');
-        cardTitle.textContent += '$5';
+    const cardTitle = document.createElement('h5');
+    cardTitle.classList.add('card-title');
+    cardTitle.textContent += '$5';
 
-        const cardText = document.createElement('p');
-        cardText.classList.add('card-text');
-        cardText.textContent += 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+    const cardText = document.createElement('p');
+    cardText.classList.add('card-text');
+    cardText.textContent += 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
 
-        cardBody.append(cardTitle, cardText);
-        cardDiv.append(cardImg, cardBody);
-        cardContainer.appendChild(cardDiv);
-    }
-    return cardContainer;
-}
+    cardBody.append(cardTitle, cardText);
+    cardDiv.append(cardImg, cardBody);
+    cardContainer.appendChild(cardDiv);
+  }
+  return cardContainer;
+};
 
 menuContainer.appendChild(menuCards());
 export default menuContainer;

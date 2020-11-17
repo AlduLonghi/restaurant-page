@@ -6,6 +6,10 @@
 
 ![screenshoot](./src/assets/restaurant-page.png)
 
+## Live Demo
+
+[Restaurant page](https://infallible-tereshkova-b41eed.netlify.app/#)
+
 ## Built With
 
 - JavaScript(ES6)

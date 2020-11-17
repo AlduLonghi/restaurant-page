@@ -9,9 +9,9 @@ const divContainer = document.createElement('div');
 divContainer.setAttribute('id', 'tabbed-container');
 divContainer.classList.add('div-container');
 
-function indexLoad() {
+const tabbedContainer = () => {
   divContainer.append(homeContainer, aboutContainer, menuContainer, contactContainer);
   mainContainer.appendChild(divContainer);
 }
 
-export default indexLoad();
+export default tabbedContainer();

@@ -10,7 +10,7 @@ const headerImage = document.createElement('img');
 headerImage.src = Burger;
 headerImage.classList.add('h-75');
 
-function headerText() {
+const headerText = () => {
   const textContainer = document.createElement('span');
   textContainer.classList.add('w-50', 'h-100', 'brand-container', 'd-flex', 'flex-column', 'justify-content-around');
 
@@ -27,7 +27,7 @@ function headerText() {
   return textContainer;
 }
 
-function header() {
+const header = () => {
   const headerT = headerText();
 
   headerContainer.append(headerT, headerImage);

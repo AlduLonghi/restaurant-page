@@ -6,7 +6,16 @@ navbarInnerDiv.classList.add('navbar-nav', 'justify-content-around', 'w-100');
 
 const mainContainer = document.getElementById('container');
 
-function navbarLinks() {
+const onclickEvent = (id) => {
+  const tabbedContainers = document.querySelectorAll('.tabbed-container');
+  tabbedContainers.forEach(cont => {
+    cont.style.display = 'none';
+  });
+  const displayContainer = document.getElementById(`${id}-container`);
+  displayContainer.style.display = 'block';
+}
+
+const navbarLinks = () => {
   const icons = ['fa', 'fa', 'fab', 'fas'];
   const iconsClass = ['fa-home', 'fa-cutlery', 'fa-elementor', 'fa-phone'];
   const text = ['Home', 'About', 'Menu', 'Contact'];
@@ -16,6 +25,8 @@ function navbarLinks() {
     linkElem.href = '#';
     linkElem.classList.add('d-flex', 'links');
     linkElem.setAttribute('id', `${text[j]}-btn`.toLowerCase());
+    linkElem.addEventListener('click', () => {
+      onclickEvent(`${text[j]}-btn`.toLowerCase())});
 
     const iconElem = document.createElement('i');
     iconElem.classList.add(icons[j], iconsClass[j], 'nav-link');
@@ -26,8 +37,7 @@ function navbarLinks() {
 
     linkElem.append(iconElem, textElem);
     navbarInnerDiv.appendChild(linkElem);
-  }
-
+  };
   return navbarInnerDiv;
 }
 

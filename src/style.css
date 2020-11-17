@@ -79,3 +79,10 @@ img:hover {
   width: auto;
   height: 12rem;
 }
+
+.menu-card {
+  width: 15rem;
+  height: 22rem;
+  color:black;
+  font-family: 'Courier New', Courier, monospace;
+}

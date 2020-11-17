@@ -41,10 +41,8 @@ const navbarLinks = () => {
   return navbarInnerDiv;
 }
 
-function navbar() {
-  const links = navbarLinks();
-
-  navbarContainer.appendChild(links);
+const navbar = () => {
+  navbarContainer.appendChild(navbarLinks());
   mainContainer.append(navbarContainer);
 }
 

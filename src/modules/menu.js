@@ -1,6 +1,6 @@
-import burger1 from './assets/burger-1.jpg';
-import burger2 from './assets/burger-2.jpg';
-import burger3 from './assets/burger-3.jpg';
+import burger1 from '../assets/burger-1.jpg';
+import burger2 from '../assets/burger-2.jpg';
+import burger3 from '../assets/burger-3.jpg';
 
 const menuContainer = document.createElement('div');
 menuContainer.setAttribute('id', 'menu-btn-container');

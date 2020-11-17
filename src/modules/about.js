@@ -1,6 +1,6 @@
-import restPic1 from './assets/restaurant-1.jpg';
-import restPic2 from './assets/restaurant-2.jpg';
-import restPic3 from './assets/restaurant-3.jpg';
+import restPic1 from '../assets/restaurant-1.jpg';
+import restPic2 from '../assets/restaurant-2.jpg';
+import restPic3 from '../assets/restaurant-3.jpg';
 
 const aboutContainer = document.createElement('div');
 aboutContainer.setAttribute('id', 'about-btn-container');

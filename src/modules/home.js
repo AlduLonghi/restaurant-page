@@ -1,4 +1,4 @@
-import BurgerGif from './assets/burger-gif.gif';
+import BurgerGif from '../assets/burger-gif.gif';
 
 const homeContainer = document.createElement('div');
 homeContainer.setAttribute('id', 'home-btn-container');

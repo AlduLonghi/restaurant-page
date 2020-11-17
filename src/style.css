@@ -97,3 +97,8 @@ img:hover {
   color: whitesmoke;
   font-size: 1.4rem;
 }
+
+.footer-div {
+  background-color: #b20303;
+  height: 4.5rem;
+}

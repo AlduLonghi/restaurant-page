@@ -1,4 +1,4 @@
-import Burger from './assets/Big-Poppa-2.png';
+import Burger from '../assets/Big-Poppa-2.png';
 
 const headerContainer = document.createElement('div');
 headerContainer.classList.add('header', 'd-flex', 'align-items-center', 'justify-content-around');

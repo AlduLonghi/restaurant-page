@@ -1,6 +1,8 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Restaurant page
 
-> This project consisted on building a simple restaurant page for practicing tabbed browsing.
+> This project consisted on building a simple restaurant page for practicing ES6. The aim of it was to strengthen our abilities with Webpack as well as manipulating objects in the DOM. The main feature is tabbed browsing section using a navbar.
 
 ![screenshoot](./src/assets/restaurant-page.png)
 
@@ -8,6 +10,7 @@
 
 - JavaScript(ES6)
 - Webpack
+- Bootstrap.
 
 ## Getting Started
 
@@ -23,7 +26,7 @@
 - Twitter: [@AbrilLonghi](https://twitter.com/AbrilLonghi )
 - Linkedin: [Aldana Abril Longhi](https://www.linkedin.com/in/aldana-abril-longhi-a842ba1a7/ )
 
-## �� Contributing
+## 🤝 Contributing
 
 - To contribute to this project:
 - Fork this repository & clone locally.

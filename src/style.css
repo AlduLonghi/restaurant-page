@@ -1,0 +1,104 @@
+.header {
+  width: 100%;
+  height: 40vh;
+  background-image: url('./assets/table-pic-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.brand {
+  font-size: 6.5vw;
+  color: #f7cb46;
+  font-family: 'Permanent Marker', cursive;
+  line-height: 95%;
+}
+
+.slogan {
+  color: white;
+  font-size: 1.5vw;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.brand-container {
+  background-color: rgba(13, 13, 13, 0.4);
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.navbar-nav a {
+  color: black;
+}
+
+.div-container {
+  height: 47vh;
+  background-color: black;
+  color: #f7cb46;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.home-description {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-title {
+  font-size: 3.2vw;
+}
+
+.burger-gif {
+  height: 8vw;
+  width: 8vw;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.rest-img {
+  width: auto;
+  height: 12rem;
+}
+
+.menu-card {
+  width: 15rem;
+  height: 22rem;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-title {
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.contact-description {
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  font-size: 1.4rem;
+}
+
+.footer-div {
+  background-color: #b20303;
+  height: 4.5rem;
+}
